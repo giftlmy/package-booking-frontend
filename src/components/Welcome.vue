@@ -27,7 +27,8 @@ export default {
     },
     methods: {
     start: function() {
-      this.$router.push("/WareHouse/");
+      this.$store.dispatch('getPackages');
+      this.$router.push("/ListView");
     }
   }
 }

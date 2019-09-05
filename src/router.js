@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Welcome from './components/Welcome.vue'
 import WareHouse from './components/WareHouse.vue'
 import PickUp from './components/PickUp.vue'
+import ListView from './components/ListView.vue'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/PickUp',
       name: 'PickUp',
       component: PickUp
+    },
+    {
+      path: '/ListView',
+      name: 'ListView',
+      component: ListView
     }
     // {
     //   path: '/about',
